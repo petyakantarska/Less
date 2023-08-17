@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		A130AC182A790530002FC75D /* LessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC172A790530002FC75D /* LessApp.swift */; };
-		A130AC1A2A790530002FC75D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC192A790530002FC75D /* ContentView.swift */; };
 		A130AC1C2A790532002FC75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A130AC1B2A790532002FC75D /* Assets.xcassets */; };
 		A130AC1F2A790532002FC75D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A130AC1E2A790532002FC75D /* Preview Assets.xcassets */; };
+		A130AC262A790797002FC75D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A130AC252A790797002FC75D /* GoogleService-Info.plist */; };
+		A130AC332A790BAB002FC75D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC322A790BAB002FC75D /* WelcomeScreen.swift */; };
+		A130AC352A79178D002FC75D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC342A79178D002FC75D /* HomeScreen.swift */; };
+		A130AC372A79179F002FC75D /* LogInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC362A79179F002FC75D /* LogInScreen.swift */; };
+		A130AC392A791858002FC75D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC382A791858002FC75D /* AuthViewModel.swift */; };
+		A130AC3B2A791CED002FC75D /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130AC3A2A791CED002FC75D /* SignUpScreen.swift */; };
+		A155EA862A82000700F4DD87 /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EA852A82000700F4DD87 /* DBViewModel.swift */; };
+		A155EAB42A820DA700F4DD87 /* DeclutteringTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */; };
+		A155EAB62A82104800F4DD87 /* DeclutteringToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */; };
+		A155EADB2A82163D00F4DD87 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A155EADA2A82163D00F4DD87 /* FirebaseAuth */; };
+		A1C82EC52A8216CB00701E4B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1C82EC42A8216CB00701E4B /* FirebaseFirestoreSwift */; };
+		A1CB72452A8DE6090066D387 /* MinimalismChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */; };
+		A1CB72472A8DE6D40066D387 /* AboutMinimalismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */; };
+		A1ECF94F2A85129F000331DE /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECF94E2A85129F000331DE /* AddTaskView.swift */; };
+		A1ECF9572A863EC1000331DE /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECF9562A863EC1000331DE /* EditTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A130AC142A790530002FC75D /* Less.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Less.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A130AC172A790530002FC75D /* LessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessApp.swift; sourceTree = "<group>"; };
-		A130AC192A790530002FC75D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A130AC1B2A790532002FC75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A130AC1E2A790532002FC75D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A130AC252A790797002FC75D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A130AC322A790BAB002FC75D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		A130AC342A79178D002FC75D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A130AC362A79179F002FC75D /* LogInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen.swift; sourceTree = "<group>"; };
+		A130AC382A791858002FC75D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A130AC3A2A791CED002FC75D /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		A155EA852A82000700F4DD87 /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
+		A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclutteringTasks.swift; sourceTree = "<group>"; };
+		A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclutteringToDoList.swift; sourceTree = "<group>"; };
+		A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalismChallengeView.swift; sourceTree = "<group>"; };
+		A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMinimalismView.swift; sourceTree = "<group>"; };
+		A1ECF94E2A85129F000331DE /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		A1ECF9562A863EC1000331DE /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A155EADB2A82163D00F4DD87 /* FirebaseAuth in Frameworks */,
+				A1C82EC52A8216CB00701E4B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +65,7 @@
 			children = (
 				A130AC162A790530002FC75D /* Less */,
 				A130AC152A790530002FC75D /* Products */,
+				A1C82EC32A8216CB00701E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +81,20 @@
 			isa = PBXGroup;
 			children = (
 				A130AC172A790530002FC75D /* LessApp.swift */,
-				A130AC192A790530002FC75D /* ContentView.swift */,
+				A130AC322A790BAB002FC75D /* WelcomeScreen.swift */,
+				A130AC382A791858002FC75D /* AuthViewModel.swift */,
+				A155EA852A82000700F4DD87 /* DBViewModel.swift */,
+				A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */,
+				A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */,
+				A1ECF94E2A85129F000331DE /* AddTaskView.swift */,
+				A1ECF9562A863EC1000331DE /* EditTaskView.swift */,
+				A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */,
+				A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */,
+				A130AC342A79178D002FC75D /* HomeScreen.swift */,
+				A130AC362A79179F002FC75D /* LogInScreen.swift */,
+				A130AC3A2A791CED002FC75D /* SignUpScreen.swift */,
 				A130AC1B2A790532002FC75D /* Assets.xcassets */,
+				A130AC252A790797002FC75D /* GoogleService-Info.plist */,
 				A130AC1D2A790532002FC75D /* Preview Content */,
 			);
 			path = Less;
@@ -65,6 +106,13 @@
 				A130AC1E2A790532002FC75D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1C82EC32A8216CB00701E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +131,10 @@
 			dependencies = (
 			);
 			name = Less;
+			packageProductDependencies = (
+				A155EADA2A82163D00F4DD87 /* FirebaseAuth */,
+				A1C82EC42A8216CB00701E4B /* FirebaseFirestoreSwift */,
+			);
 			productName = Less;
 			productReference = A130AC142A790530002FC75D /* Less.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,9 @@
 				Base,
 			);
 			mainGroup = A130AC0B2A790530002FC75D;
+			packageReferences = (
+				A155EACD2A82163D00F4DD87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A130AC152A790530002FC75D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +182,7 @@
 			files = (
 				A130AC1F2A790532002FC75D /* Preview Assets.xcassets in Resources */,
 				A130AC1C2A790532002FC75D /* Assets.xcassets in Resources */,
+				A130AC262A790797002FC75D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +193,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A130AC1A2A790530002FC75D /* ContentView.swift in Sources */,
+				A155EA862A82000700F4DD87 /* DBViewModel.swift in Sources */,
+				A1ECF94F2A85129F000331DE /* AddTaskView.swift in Sources */,
+				A130AC392A791858002FC75D /* AuthViewModel.swift in Sources */,
+				A1CB72472A8DE6D40066D387 /* AboutMinimalismView.swift in Sources */,
+				A130AC352A79178D002FC75D /* HomeScreen.swift in Sources */,
+				A130AC372A79179F002FC75D /* LogInScreen.swift in Sources */,
+				A130AC332A790BAB002FC75D /* WelcomeScreen.swift in Sources */,
+				A155EAB42A820DA700F4DD87 /* DeclutteringTasks.swift in Sources */,
+				A1CB72452A8DE6090066D387 /* MinimalismChallengeView.swift in Sources */,
+				A1ECF9572A863EC1000331DE /* EditTaskView.swift in Sources */,
 				A130AC182A790530002FC75D /* LessApp.swift in Sources */,
+				A155EAB62A82104800F4DD87 /* DeclutteringToDoList.swift in Sources */,
+				A130AC3B2A791CED002FC75D /* SignUpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +409,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A155EACD2A82163D00F4DD87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A155EADA2A82163D00F4DD87 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A155EACD2A82163D00F4DD87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A1C82EC42A8216CB00701E4B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A155EACD2A82163D00F4DD87 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A130AC0C2A790530002FC75D /* Project object */;
 }
