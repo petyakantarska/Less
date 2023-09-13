@@ -16,12 +16,14 @@ struct WelcomeScreen: View {
     
     
     var body: some View {
-        if viewModel.isLoggedIn {
-            HomeScreen()
-                .environmentObject(viewModel)
-        } else {
-            LogInScreen()
-                .environmentObject(viewModel)
+        NavigationStack {
+            if viewModel.isLoggedIn {
+                HomeScreen()
+                    .environmentObject(viewModel)
+            } else {
+                LogInScreen()
+                    .environmentObject(viewModel)
+            }
         }
     }
 }

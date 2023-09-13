@@ -11,15 +11,26 @@ import FirebaseAuth
 import FirebaseCore
 
 class AuthViewModel: ObservableObject {
+    static let shared = AuthViewModel()
+    @Published var currentUser: User?
     @Published var isLoggedIn = false
+    
     
     init() {
         Auth.auth().addStateDidChangeListener { [weak self] auth, user in
             self?.isLoggedIn = auth.currentUser != nil
         }
+        Auth.auth().addStateDidChangeListener { [weak self] auth, user in
+            guard let self = self else { return }
+            self.currentUser = user
+        }
     }
     
-    func login(email: String, password: String) {
+    func getCurrentUserUID() -> String? {
+        return currentUser?.uid
+    }
+    
+    func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self]
             (authResult, error) in
             if error == nil {
@@ -31,7 +42,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func logout() {
+    func signOut() {
         do {
             try Auth.auth().signOut()
             isLoggedIn = false
@@ -40,7 +51,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func signup(email: String, password: String) {
+    func createUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password)
     }
 }

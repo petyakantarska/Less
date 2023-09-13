@@ -20,6 +20,9 @@
 		A155EAB42A820DA700F4DD87 /* DeclutteringTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */; };
 		A155EAB62A82104800F4DD87 /* DeclutteringToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */; };
 		A155EADB2A82163D00F4DD87 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A155EADA2A82163D00F4DD87 /* FirebaseAuth */; };
+		A16D7DE22AB1B80700061FB5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D7DE12AB1B80700061FB5 /* SettingsView.swift */; };
+		A16D7DE42AB21FB400061FB5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D7DE32AB21FB400061FB5 /* Article.swift */; };
+		A16D7DE62AB220D200061FB5 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16D7DE52AB220D200061FB5 /* ArticleViewModel.swift */; };
 		A1C82EC52A8216CB00701E4B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1C82EC42A8216CB00701E4B /* FirebaseFirestoreSwift */; };
 		A1CB72452A8DE6090066D387 /* MinimalismChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */; };
 		A1CB72472A8DE6D40066D387 /* AboutMinimalismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */; };
@@ -41,6 +44,9 @@
 		A155EA852A82000700F4DD87 /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
 		A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclutteringTasks.swift; sourceTree = "<group>"; };
 		A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclutteringToDoList.swift; sourceTree = "<group>"; };
+		A16D7DE12AB1B80700061FB5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A16D7DE32AB21FB400061FB5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A16D7DE52AB220D200061FB5 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalismChallengeView.swift; sourceTree = "<group>"; };
 		A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMinimalismView.swift; sourceTree = "<group>"; };
 		A1ECF94E2A85129F000331DE /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
@@ -80,19 +86,14 @@
 		A130AC162A790530002FC75D /* Less */ = {
 			isa = PBXGroup;
 			children = (
+				A16D7DED2AB2268E00061FB5 /* Welcome */,
+				A16D7DEA2AB2266C00061FB5 /* Auth */,
+				A16D7DE82AB2263D00061FB5 /* Tasks */,
+				A16D7DE72AB2262000061FB5 /* Articles */,
+				A16D7DE92AB2264D00061FB5 /* Challenge */,
+				A16D7DEC2AB2267A00061FB5 /* Settings */,
+				A16D7DEB2AB2267500061FB5 /* Home */,
 				A130AC172A790530002FC75D /* LessApp.swift */,
-				A130AC322A790BAB002FC75D /* WelcomeScreen.swift */,
-				A130AC382A791858002FC75D /* AuthViewModel.swift */,
-				A155EA852A82000700F4DD87 /* DBViewModel.swift */,
-				A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */,
-				A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */,
-				A1ECF94E2A85129F000331DE /* AddTaskView.swift */,
-				A1ECF9562A863EC1000331DE /* EditTaskView.swift */,
-				A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */,
-				A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */,
-				A130AC342A79178D002FC75D /* HomeScreen.swift */,
-				A130AC362A79179F002FC75D /* LogInScreen.swift */,
-				A130AC3A2A791CED002FC75D /* SignUpScreen.swift */,
 				A130AC1B2A790532002FC75D /* Assets.xcassets */,
 				A130AC252A790797002FC75D /* GoogleService-Info.plist */,
 				A130AC1D2A790532002FC75D /* Preview Content */,
@@ -106,6 +107,70 @@
 				A130AC1E2A790532002FC75D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A16D7DE72AB2262000061FB5 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				A16D7DE52AB220D200061FB5 /* ArticleViewModel.swift */,
+				A16D7DE32AB21FB400061FB5 /* Article.swift */,
+				A1CB72462A8DE6D40066D387 /* AboutMinimalismView.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		A16D7DE82AB2263D00061FB5 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				A155EA852A82000700F4DD87 /* DBViewModel.swift */,
+				A155EAB32A820DA700F4DD87 /* DeclutteringTasks.swift */,
+				A155EAB52A82104800F4DD87 /* DeclutteringToDoList.swift */,
+				A1ECF94E2A85129F000331DE /* AddTaskView.swift */,
+				A1ECF9562A863EC1000331DE /* EditTaskView.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		A16D7DE92AB2264D00061FB5 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A1CB72442A8DE6090066D387 /* MinimalismChallengeView.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		A16D7DEA2AB2266C00061FB5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A130AC382A791858002FC75D /* AuthViewModel.swift */,
+				A130AC362A79179F002FC75D /* LogInScreen.swift */,
+				A130AC3A2A791CED002FC75D /* SignUpScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A16D7DEB2AB2267500061FB5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A130AC342A79178D002FC75D /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A16D7DEC2AB2267A00061FB5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A16D7DE12AB1B80700061FB5 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A16D7DED2AB2268E00061FB5 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				A130AC322A790BAB002FC75D /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		A1C82EC32A8216CB00701E4B /* Frameworks */ = {
@@ -194,18 +259,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A155EA862A82000700F4DD87 /* DBViewModel.swift in Sources */,
+				A16D7DE62AB220D200061FB5 /* ArticleViewModel.swift in Sources */,
 				A1ECF94F2A85129F000331DE /* AddTaskView.swift in Sources */,
 				A130AC392A791858002FC75D /* AuthViewModel.swift in Sources */,
 				A1CB72472A8DE6D40066D387 /* AboutMinimalismView.swift in Sources */,
 				A130AC352A79178D002FC75D /* HomeScreen.swift in Sources */,
 				A130AC372A79179F002FC75D /* LogInScreen.swift in Sources */,
 				A130AC332A790BAB002FC75D /* WelcomeScreen.swift in Sources */,
+				A16D7DE22AB1B80700061FB5 /* SettingsView.swift in Sources */,
 				A155EAB42A820DA700F4DD87 /* DeclutteringTasks.swift in Sources */,
 				A1CB72452A8DE6090066D387 /* MinimalismChallengeView.swift in Sources */,
 				A1ECF9572A863EC1000331DE /* EditTaskView.swift in Sources */,
 				A130AC182A790530002FC75D /* LessApp.swift in Sources */,
 				A155EAB62A82104800F4DD87 /* DeclutteringToDoList.swift in Sources */,
 				A130AC3B2A791CED002FC75D /* SignUpScreen.swift in Sources */,
+				A16D7DE42AB21FB400061FB5 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

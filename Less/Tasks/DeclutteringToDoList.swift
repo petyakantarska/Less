@@ -8,24 +8,17 @@
 import SwiftUI
 
 struct DeclutteringToDoList: View {
-    
     @ObservedObject var db = DBViewModel()
-    
     @State private var isCreateTaskSheetVisible = false
-    
     @State private var isChecked = false
     
-    
-    
     var body: some View {
-        Spacer()
         NavigationView {
             List {
                 ForEach(db.tasks, id: \.id) { task in
                     VStack {
                         HStack {
                             TaskRow(task: task) { updatedTask in
-                                updatedTask.isCompleted = !updatedTask.isCompleted
                                 db.update(updatedTask)
                             }
                             .swipeActions(edge: .leading, allowsFullSwipe: false) {
@@ -33,7 +26,6 @@ struct DeclutteringToDoList: View {
                                     EditTaskView(task: task, onUpdate: { task in
                                         db.update(task)
                                     }) {
-                                        // TODO: on dismiss
                                     }
                                 }, label: {
                                     Text("Edit")
@@ -51,39 +43,28 @@ struct DeclutteringToDoList: View {
             }.onAppear {
                 db.fetchData()
             }
-            .toolbar {
-                ToolbarItem(placement: .bottomBar) {
-                    HStack {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "plus")
-                        }
-                        NavigationLink(destination: MinimalismChallengeView()) {
-                            Text("Challenge")
-                        }
-                        NavigationLink(destination: AboutMinimalismView()) {
-                            Text("About minimalism")
-                        }
-                    }
-
-                }
-            }
-        }
-        .navigationBarItems(trailing:
-            Button("Add") {
-                isCreateTaskSheetVisible = true
-            })
-        .navigationTitle("📦 Decluttering List")
-        .multilineTextAlignment(.center)
-        .sheet(isPresented: $isCreateTaskSheetVisible) {
-            db.fetchData()
-            isCreateTaskSheetVisible = false
-        } content: {
-            AddTaskView() {
+            .navigationBarItems(
+                trailing: Button(action: {
+                    isCreateTaskSheetVisible = true
+                }, label: {
+                    Text("Add")
+                        .foregroundColor(.white)
+                        .padding(10)
+                        .background(Color.brown.opacity(0.5))
+                        .cornerRadius(10)
+                })
+            )
+            .navigationTitle("📦 Decluttering List")
+            .multilineTextAlignment(.center)
+            .sheet(isPresented: $isCreateTaskSheetVisible) {
+                db.fetchData()
                 isCreateTaskSheetVisible = false
+            } content: {
+                AddTaskView() {
+                    isCreateTaskSheetVisible = false
+                }
+                .environmentObject(db)
             }
-            .environmentObject(db)
         }
     }
 }
@@ -101,14 +82,17 @@ struct TaskRow: View {
                 HStack {
                     Image(systemName: task.isCompleted ? "checkmark.square.fill" : "square")
                         .foregroundColor(task.isCompleted ? .blue : .gray)
-                    Text("")
+//                    Text("")
                     
                 }
             }
             
-            VStack {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(task.name)
-                Text(task.note)
+                    .font(.subheadline)
+//                Text(task.note)
+//                    .font(.subheadline)
+//                    .foregroundColor(.secondary)
             }
         }
     }

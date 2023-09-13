@@ -25,9 +25,7 @@ struct LessApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                WelcomeScreen()
-            }
+            WelcomeScreen()
         }
     }
 }
