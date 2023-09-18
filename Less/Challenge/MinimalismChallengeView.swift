@@ -66,9 +66,9 @@ struct ChallengeButtonView: View {
                 Text(isCompleted ? "Completed" : dayText)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(isCompleted ? Color.secondary.opacity(1.0) : Color.brown.opacity(0.5))
+                    .background(isCompleted ? Color.secondary.opacity(0.9) : Color.brown.opacity(0.4))
                     .foregroundColor(.white)
-                    .cornerRadius(10)
+                    .cornerRadius(30)
                     //.opacity(isCompleted ? 0.5 : 2.0)
             }
         }

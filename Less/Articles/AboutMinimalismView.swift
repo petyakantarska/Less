@@ -36,8 +36,9 @@ struct AboutMinimalismView: View {
                             }
                         }) {
                             Text(isExpanded ? "Read Less" : "Read More")
+                                .font(.caption)
                                 .foregroundColor(.blue)
-                                .padding()
+                                //.padding()
                         }
                     }
                 }

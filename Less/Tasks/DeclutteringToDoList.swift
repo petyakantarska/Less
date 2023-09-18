@@ -13,7 +13,7 @@ struct DeclutteringToDoList: View {
     @State private var isChecked = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(db.tasks, id: \.id) { task in
                     VStack {
